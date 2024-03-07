@@ -12,6 +12,8 @@
 		34443BEC2B99F3F600F541AA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 34443BEB2B99F3F600F541AA /* Assets.xcassets */; };
 		34443BEF2B99F3F600F541AA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 34443BEE2B99F3F600F541AA /* Preview Assets.xcassets */; };
 		34443BF72B99FFB600F541AA /* NetwokManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34443BF62B99FFB600F541AA /* NetwokManager.swift */; };
+		34443BF92B9A01A400F541AA /* PostData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34443BF82B9A01A400F541AA /* PostData.swift */; };
+		34443BFE2B9A11C100F541AA /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34443BFD2B9A11C100F541AA /* WebView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +23,8 @@
 		34443BEB2B99F3F600F541AA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		34443BEE2B99F3F600F541AA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		34443BF62B99FFB600F541AA /* NetwokManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetwokManager.swift; sourceTree = "<group>"; };
+		34443BF82B9A01A400F541AA /* PostData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostData.swift; sourceTree = "<group>"; };
+		34443BFD2B9A11C100F541AA /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,7 +58,7 @@
 			isa = PBXGroup;
 			children = (
 				34443BE72B99F3F500F541AA /* H4X3R_NewsApp.swift */,
-				34443BE92B99F3F500F541AA /* ContentView.swift */,
+				34443BFA2B9A0BBC00F541AA /* Views */,
 				34443BF52B99FF9D00F541AA /* Models */,
 				34443BEB2B99F3F600F541AA /* Assets.xcassets */,
 				34443BED2B99F3F600F541AA /* Preview Content */,
@@ -74,8 +78,18 @@
 			isa = PBXGroup;
 			children = (
 				34443BF62B99FFB600F541AA /* NetwokManager.swift */,
+				34443BF82B9A01A400F541AA /* PostData.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		34443BFA2B9A0BBC00F541AA /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				34443BE92B99F3F500F541AA /* ContentView.swift */,
+				34443BFD2B9A11C100F541AA /* WebView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -149,7 +163,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				34443BEA2B99F3F500F541AA /* ContentView.swift in Sources */,
+				34443BF92B9A01A400F541AA /* PostData.swift in Sources */,
 				34443BF72B99FFB600F541AA /* NetwokManager.swift in Sources */,
+				34443BFE2B9A11C100F541AA /* WebView.swift in Sources */,
 				34443BE82B99F3F500F541AA /* H4X3R_NewsApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -287,11 +303,14 @@
 				DEVELOPMENT_TEAM = KK4TXUS6YX;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = HakerNews;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.news";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -316,11 +335,14 @@
 				DEVELOPMENT_TEAM = KK4TXUS6YX;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = HakerNews;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.news";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

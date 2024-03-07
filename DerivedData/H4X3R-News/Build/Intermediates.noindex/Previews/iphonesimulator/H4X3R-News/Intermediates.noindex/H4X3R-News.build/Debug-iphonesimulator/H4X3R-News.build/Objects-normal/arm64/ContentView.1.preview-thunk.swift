@@ -10,12 +10,28 @@ import SwiftUI
 
 extension ContentView {
     @_dynamicReplacement(for: body) private var __preview__body: some View {
-        #sourceLocation(file: "/Users/vladvorniceanu/Development/H4X3R-News/H4X3R-News/ContentView.swift", line: 12)
+        #sourceLocation(file: "/Users/vladvorniceanu/Development/H4X3R-News/H4X3R-News/Views/ContentView.swift", line: 15)
         NavigationStack{
-            List(posts) { post in
-                Text(post.title)
+            List(networkManager.posts) { post in
+                NavigationLink(destination: WebView(urlString: post.url)
+                    .ignoresSafeArea()
+                    .navigationTitle(post.title)
+                    .navigationBarTitleDisplayMode(.inline).foregroundColor(.primary)
+                ) {
+                    HStack {
+                        VStack {
+                            Image(systemName: __designTimeString("#59350.[1].[1].property.[0].[0].arg[0].value.[0].arg[1].value.[0].arg[1].value.[0].arg[0].value.[0].arg[0].value.[0].arg[0].value", fallback: "arrowshape.up.circle"))
+                            Text(String(post.points))
+                                .font(.system(size: __designTimeInteger("#59350.[1].[1].property.[0].[0].arg[0].value.[0].arg[1].value.[0].arg[1].value.[0].arg[0].value.[0].arg[0].value.[1].modifier[0].arg[0].value.arg[0].value", fallback: 15)))
+                        }.padding(.trailing, __designTimeInteger("#59350.[1].[1].property.[0].[0].arg[0].value.[0].arg[1].value.[0].arg[1].value.[0].arg[0].value.[0].modifier[0].arg[1].value", fallback: 10))
+                        Text(post.title)
+                    }
+                }
             }
-            .navigationTitle(Text(__designTimeString("#43194.[1].[0].property.[0].[0].arg[0].value.[0].modifier[0].arg[0].value.arg[0].value", fallback: "Haking World News"))).frame(alignment: .center)
+            .navigationTitle(Text(__designTimeString("#59350.[1].[1].property.[0].[0].arg[0].value.[0].modifier[0].arg[0].value.arg[0].value", fallback: "Haking World News")))
+        }
+        .onAppear() {
+            networkManager.fetchData()
         }
     
 #sourceLocation()
@@ -23,7 +39,6 @@ extension ContentView {
 }
 
 import struct H4X3R_News.ContentView
-import struct H4X3R_News.Post
 #Preview {
     ContentView()
 }

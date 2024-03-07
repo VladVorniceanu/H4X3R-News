@@ -3,7 +3,7 @@
 "-sdk"
 "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator17.4.sdk"
 "-target"
-"arm64-apple-ios17.4-simulator"
+"arm64-apple-ios17.0-simulator"
 "-enable-bare-slash-regex"
 "-module-cache-path"
 "/Users/vladvorniceanu/Development/H4X3R-News/DerivedData/ModuleCache.noindex"
