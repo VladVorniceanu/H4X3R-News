@@ -5,6 +5,49 @@
 	<key>logFormatVersion</key>
 	<integer>11</integer>
 	<key>logs</key>
-	<dict/>
+	<dict>
+		<key>3966DA74-F67E-42FC-8C8A-4518DA6B9930</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>3966DA74-F67E-42FC-8C8A-4518DA6B9930.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>0</integer>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>H4X3R-News project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>H4X3R-News</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build for Previews H4X3R-News</string>
+			<key>timeStartedRecording</key>
+			<real>731512759.14262795</real>
+			<key>timeStoppedRecording</key>
+			<real>731512760.03546202</real>
+			<key>title</key>
+			<string>Build for Previews H4X3R-News</string>
+			<key>uniqueIdentifier</key>
+			<string>3966DA74-F67E-42FC-8C8A-4518DA6B9930</string>
+		</dict>
+	</dict>
 </dict>
 </plist>

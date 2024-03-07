@@ -11,6 +11,7 @@
 		34443BEA2B99F3F500F541AA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34443BE92B99F3F500F541AA /* ContentView.swift */; };
 		34443BEC2B99F3F600F541AA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 34443BEB2B99F3F600F541AA /* Assets.xcassets */; };
 		34443BEF2B99F3F600F541AA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 34443BEE2B99F3F600F541AA /* Preview Assets.xcassets */; };
+		34443BF72B99FFB600F541AA /* NetwokManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34443BF62B99FFB600F541AA /* NetwokManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		34443BE92B99F3F500F541AA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		34443BEB2B99F3F600F541AA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		34443BEE2B99F3F600F541AA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		34443BF62B99FFB600F541AA /* NetwokManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetwokManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +55,7 @@
 			children = (
 				34443BE72B99F3F500F541AA /* H4X3R_NewsApp.swift */,
 				34443BE92B99F3F500F541AA /* ContentView.swift */,
+				34443BF52B99FF9D00F541AA /* Models */,
 				34443BEB2B99F3F600F541AA /* Assets.xcassets */,
 				34443BED2B99F3F600F541AA /* Preview Content */,
 			);
@@ -65,6 +68,14 @@
 				34443BEE2B99F3F600F541AA /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		34443BF52B99FF9D00F541AA /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				34443BF62B99FFB600F541AA /* NetwokManager.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,6 +149,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				34443BEA2B99F3F500F541AA /* ContentView.swift in Sources */,
+				34443BF72B99FFB600F541AA /* NetwokManager.swift in Sources */,
 				34443BE82B99F3F500F541AA /* H4X3R_NewsApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
