@@ -17,7 +17,9 @@ struct ContentView: View {
                 NavigationLink(destination: WebView(urlString: post.url)
                     .ignoresSafeArea()
                     .navigationTitle(post.title)
-                    .navigationBarTitleDisplayMode(.inline).foregroundColor(.primary)
+                    .navigationBarTitleDisplayMode(.inline).foregroundColor(Color.white)
+                    .toolbarBackground(.visible, for: .navigationBar)
+//                    .toolbarBackground(Color., for: .navigationBar)
                 ) {
                     HStack {
                         VStack {
